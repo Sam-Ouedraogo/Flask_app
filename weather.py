@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-def get_current_weather(city="Baltimore"):
+def get_current_weather(city = "Baltimore"):
     
     request_url = f'https://api.openweathermap.org/data/2.5/weather?appid={os.getenv("API key")}&q={city}&units=imperial'
     
